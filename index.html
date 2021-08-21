@@ -1,0 +1,16 @@
+<html>
+
+<body>
+    <canvas id="canvas"></canvas>
+</body>
+
+<script type="text/javascript" src="jsmpeg.min.js"></script>
+<script type="text/javascript">
+    player = new JSMpeg.Player('ws://ec2-54-255-248-5.ap-southeast-1.compute.amazonaws.com:9999', {
+        canvas: document.getElementById('canvas'),
+        autoplay: true, audio: false, loop: true
+    });
+    player.play();
+</script>
+
+</html>
